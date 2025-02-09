@@ -1,0 +1,47 @@
+// CSS Reset
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+// remove default margin
+* {
+    margin: 0;
+}
+
+body{
+    // add accessible line-height
+    line-height: 1.5;
+    // improve text rendering
+    -webkit-font-smoothing:antialiased;
+}
+
+// improve media defaults
+img, picture, svg, video, canvas{
+    display: block;
+    width: 100%;
+}
+
+// inherit fonts from controls
+input, button, textarea, select{
+    font: inherit;
+}
+
+// avoid text overflow
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+// improve line wrapping
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+}
+
+// create a root stacking context
+#root, #__next{
+    isolation: isolate;
+}
